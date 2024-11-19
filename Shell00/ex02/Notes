@@ -1,0 +1,17 @@
+In this exercise they ask us for a bunch of files with different sizes and timestamps. So files are created with the touch command. After creating all the files and directories, we can move on to the permissions, size and timestamps. (The last one, test6, is a soft link, which can't be created directly, we use the command 'ln -s test0 test6' (ln for link, -s for soft / symbolic) and the both the link and test6 will be created, if the file already exists it won't do anything and give an error saying that test6 already exists))
+
+When we use 'ls -l' on the terminal, we can see something like this on the listing '-rwxrwxrwx 1 joana joana 0 Nov 14 12:15 file.txt'. Breaking this down:
+
+The first part show the permissions for the file, (r for read, w for write, x for execute), three groups of them, the first group belongs to the user (the first three letters), the second three letters belong to the group where the user is inserted (for example, let's say I'm in a group with you on this computer, those three letters would be the permissions you would have for the file), the last three letters refer to permissions for everyone else. Permissions can be changed with the command chmod, either using numbers or the letter itself; with numbers you can 'play around' with permissions as you want, to add permission to write you use 4, for write you use 2 and for execute you use 1, and you always need to change permission for all three groups, so say you wanted to give yourself all permissions, but only reading permission to anyone else, you would write chmod 744 and then the name of the file (7 because you added the three numbers); if you use chmod +x for example, means you're giving permission to execute to all groups; 
+
+The number after, from what I gathered, means only file or directory, 1 for file, 2 for directory; 
+
+The name after is your user, and after that is the group where your user is inserted; 
+
+The number after is the storage ocuppied by the file or directory, in bytes; 
+
+Next we have the timestamp, and finally the file name; 
+
+Like I said before, size can be altered on a file, and for that we use the 'truncate' command, 'truncate --size 4 a', this will change the size of the file to 4 bytes; you can give it 4KB if you want, specify the unity of size, it will always show up in bytes; 
+
+To change the timestamp we use the touch command as well, but with a flag, -t, which will indicate you want to alter the timestamp, something like 'touch -t 202205082124 a', first date, year, month, year, and then hours and minutes; the last file here, is neither a directory or a file exactly, it's a soft link to another file. What does this mean? It's basically a shortcut, click here, go to the other one. To change the timestamp on this one we need an extra flag ou the touch command, -h, which allows to alter the timestamp in symbolic links.

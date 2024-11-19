@@ -1,0 +1,1 @@
+Here we had to create a file and write a command line inside that will list all files in a directory, not showing hidden files (the ones starting with '.' and '..'; ls is the command to list evertyhing and -A is the flag to ignore the hidden files

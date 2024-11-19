@@ -1,0 +1,5 @@
+cat is a command that will print on the standard output (the terminal) the (written) contents of a file. 
+The subject asked us to create a file with a z inside, so that it will print the letter z when you use the cat command on it. Even with something so simple, there's various ways to do this:
+1 - You can use the command touch (which creates a new file), then use any editor (vs code, vim, vi, neovim, doesn't matter) to write the z inside the file; 
+2 - You can do it by hand, create the file in the folder directly not using the terminal, and then using the text editor to write a z inside; 
+3 - or even like I did, 'echo Z > z', explaining, echo is a command that prints whatever you write in front of it in the terminal, but the '> z' means that, instead of writing it in the terminal, it's gonna write inside of the file z. If the file doesn't exist, it's created.
