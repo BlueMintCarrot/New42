@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joana <joana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 17:47:15 by joana             #+#    #+#             */
-/*   Updated: 2024/11/26 19:10:53 by joana            ###   ########.fr       */
+/*   Created: 2024/11/26 12:30:08 by joana             #+#    #+#             */
+/*   Updated: 2024/11/26 12:36:13 by joana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putchar(char c)
+char	*ft_strcpy(char *dest, char *src)
 {
-	write(1, &c, 1);
+	int	i;
+
+	i = -1;
+	while (src[++i])
+		dest[i] = src[i];
+	return (dest);
 }
+
+/* int	main(void)
+{
+	char	src[50] = "abcdefghij";
+	char	dest[50];
+
+	ft_strcpy(dest, src);
+} */

@@ -1,18 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joana <joana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 17:47:15 by joana             #+#    #+#             */
-/*   Updated: 2024/11/26 19:10:53 by joana            ###   ########.fr       */
+/*   Created: 2024/11/26 12:37:16 by joana             #+#    #+#             */
+/*   Updated: 2024/11/26 12:54:08 by joana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
-void	ft_putchar(char c)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	write(1, &c, 1);
+	int	i;
+
+	i = -1;
+	while (src[++i] && i < (int)n)
+		dest[i] = src[i];
+	while (i < (int)n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
+
+/* int	main(void)
+{
+	char	src[50] = "abcdefghij";
+	char	dest[50];
+
+	ft_strncpy(dest, src, 15);
+	printf("dest2 = %s, size = %ld\n", strncpy(dest, src, 5), strlen(dest));
+} */

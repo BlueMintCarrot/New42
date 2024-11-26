@@ -1,0 +1,1 @@
+This line of command means this file is going to search in another given file for the string "42" at the 42 byte of that file. If it exists it will print 42 on the terminal, if it doesn't exist, it will print nothing.
