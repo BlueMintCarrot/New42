@@ -1,4 +1,4 @@
-#ft_print_comb
+# print_comb
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# ft_putchar
+# putchar
 
 ## Table of Contents
 

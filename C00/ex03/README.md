@@ -1,4 +1,4 @@
-# ft_print_numbers
+# print_numbers
 
 ## Table of Contents
 

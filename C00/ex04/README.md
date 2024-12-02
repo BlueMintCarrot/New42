@@ -1,4 +1,4 @@
-# ft_is_negative
+# is_negative
 
 ## Table of Contents
 

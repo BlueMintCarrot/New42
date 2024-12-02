@@ -1,4 +1,4 @@
-# ft_print_alphabet
+# print_alphabet
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# ft_putnbr
+# putnbr
 
 ## Table of Contents
 

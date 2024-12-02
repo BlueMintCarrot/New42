@@ -1,4 +1,4 @@
-# ft_print_reverse_alphabet
+# print_reverse_alphabet
 
 ## Table of Contents
 
